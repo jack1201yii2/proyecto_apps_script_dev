@@ -1,0 +1,47 @@
+//<script type="text/jsx">
+function FormularioRegistro() {
+    const guardarFormulario = (datosFormulario) => {
+        console.log(datosFormulario)
+    }
+    return(
+        <div className="px-20">
+            <h2 className="text-center fonto-bold text-xl my-6">Formulario Registro</h2>
+            <Form
+                onFinish={guardarFormulario} 
+                layout="vertical">
+                <Item 
+                    name="name"
+                    label="Nombre Completo"
+                    rules={[
+                        {required:true, message: "El nombre es requerido"}                    
+                    ]}
+                    >
+                    <Input />
+                </Item>
+                <Item 
+                    name="email"
+                    label="Correo Electronico"
+                    rules={[
+                        {type: "email", message:"No es un correo valido"},
+                        {required:true, message: "El correo es requerido"}                    
+                    ]}
+                    >
+                    <Input />
+                </Item>
+                <Item 
+                    name="password"
+                    label="Contraseña"
+                    rules={[
+                        {required:true, message: "La Contraseña es requerida"}                    
+                    ]}
+                    >
+                    <Password />
+                </Item>
+                <Item className="text-center">
+                    <Button htmlType="submit">Guardar</Button>
+                </Item>
+            </Form>
+        </div>
+    )
+}
+//</script>

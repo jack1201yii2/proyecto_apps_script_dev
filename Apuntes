@@ -105,3 +105,19 @@ Cap 6. Configuraciones previas
 11- Incluimos las constantesCdn al archivo index con include despues de <body>
 12- Creamos el archivo frontend/routes/Routes.html
 13- Incluimos el archivo Routes.html en index.html con include despues del <body> antes de App
+14- subimos los cambio a drive y a git
+
+Cap. 7 Rutas y componentes
+1- Creamos el archivo views/inicio.html y lo incluimos en index
+2- Agregamos la ruta de Inicio en el archivo Routes.html
+3- creamos el archivo frontend/componentes/header.html
+	y lo agregamos en el archivo Routes.html antesde de <Switch>
+	y lo incluimos en index.html
+4- Creamos el archivo frontend/views/formularios/FormularioRegistro
+	y lo agregamos en el archivo Routes.html en el <Switch>
+	y lo incluimos en index.html
+	y angregamos el link en Header.html
+5- colocamos una sombra en el div del header.html para diferenciar
+6- En el archivo Routes.html redireccionamos a inicio colocando la 
+	etiqueta <Redirect to="/" /> antes de switch
+7- En el archivo header le metemos unos estilos para que se vea mejor
