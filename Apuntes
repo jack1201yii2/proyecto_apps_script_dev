@@ -67,6 +67,12 @@ Para bajar cambios es con el comando
 Para subir cambios es con 
 >clasp push.
 
+
+--------------Hacer otro commit a Github---------------
+>git add .
+>git commit -m "descripcion del commit"
+>git push -u origin main
+
 Cap 5. Iniciar nuevo proyecto
 
 1- Crear el proyecto en Drive
@@ -121,3 +127,18 @@ Cap. 7 Rutas y componentes
 6- En el archivo Routes.html redireccionamos a inicio colocando la 
 	etiqueta <Redirect to="/" /> antes de switch
 7- En el archivo header le metemos unos estilos para que se vea mejor
+
+Cap. 8
+1- Creamos el formulario de registro con antd desing
+
+Cap. 9
+1- Creamos una hoja de calculo en drive
+2- Creamos el archivo backend/config/env.js en el colocamos nuestras variables de entorno
+3- Creamos el archivo backen/database/conexion.js y configuramos nuestra conexion
+
+Cap. 10 
+1- creamos el archivo backend/controller/controllerUsuarios.js
+
+Cap. 11
+1- Creamos el archivo frontend/helpers/modalesNotificaciones.html 
+	y lo incluimos en index

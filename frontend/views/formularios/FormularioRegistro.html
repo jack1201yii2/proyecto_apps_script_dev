@@ -1,12 +1,21 @@
 //<script type="text/jsx">
 function FormularioRegistro() {
+
+    const [form] = Form.useForm(); //hook para resetear formulario 
+    //[form] -> es la etiqueta form que esta abajo
+
     const guardarFormulario = (datosFormulario) => {
-        console.log(datosFormulario)
+        const id = v4();//generamos un id
+        google.script.run.withSuccessHandler(resp =>{
+            console.log(resp.titulo);
+            form.resetFields();//reseteamos el form
+        }).guardarUsuario({id, ...datosFormulario});
     }
     return(
         <div className="px-20">
             <h2 className="text-center fonto-bold text-xl my-6">Formulario Registro</h2>
             <Form
+                form={form}
                 onFinish={guardarFormulario} 
                 layout="vertical">
                 <Item 
