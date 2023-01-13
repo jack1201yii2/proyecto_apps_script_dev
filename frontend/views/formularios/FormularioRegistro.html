@@ -5,9 +5,13 @@ function FormularioRegistro() {
     //[form] -> es la etiqueta form que esta abajo
 
     const guardarFormulario = (datosFormulario) => {
+
+        notificacionGuardando("Guardando usuario")
+        
         const id = v4();//generamos un id
-        google.script.run.withSuccessHandler(resp =>{
-            console.log(resp.titulo);
+        
+        google.script.run.withSuccessHandler(({titulo, descripcion}) =>{
+            notificacionTareaTerminada(titulo, descripcion);
             form.resetFields();//reseteamos el form
         }).guardarUsuario({id, ...datosFormulario});
     }

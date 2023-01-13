@@ -142,3 +142,8 @@ Cap. 10
 Cap. 11
 1- Creamos el archivo frontend/helpers/modalesNotificaciones.html 
 	y lo incluimos en index
+2- Implementamos el modal en el formulario
+3.- Creamos el archivo frontend/usuarios/Ususarios.html
+	y lo incluimos en index
+	y agregamos la ruta al archivo Routes.html
+	y lo agregamos al archivo header.html

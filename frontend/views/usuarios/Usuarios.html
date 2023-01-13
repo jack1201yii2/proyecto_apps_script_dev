@@ -1,0 +1,14 @@
+//<script type="text/jsx">
+function Usuarios(){
+    useEffect(listarUsuarios, [])
+    //cada que se cargue el componente la funcion se ejecutara automaticamente
+    function listarUsuarios(){
+        google.script.run.withSuccessHandler(respuesta => {
+            console.log(respuesta);
+        }).listarUsuarios();
+    }
+    return(
+        <div></div>
+    );
+}
+//</script>
