@@ -78,6 +78,8 @@ Cap 5. Iniciar nuevo proyecto
 7- Instalar Tailwind CSS con: npm install -D tailwindcss
 8- Inicializar Tailwind CSS con: npx tailwindcss init
 9- Crear el archivo .claspignore y colocar los archivos que no queramos subir.
+	tailwind.config.js
+	node_modules/**
 10- subir los cambios a Drive con: clasp push -w
 
 Subir a github
