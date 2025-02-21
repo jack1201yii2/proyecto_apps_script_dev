@@ -76,7 +76,7 @@ Cap 5. Iniciar nuevo proyecto
 5- Instalar el autocompletado de GAS con: npm i -s @types/google-apps-script
 6- Clonar el proyecto de drive a local con: clasp clone "pegar el id aqui"
 7- Instalar Tailwind CSS con: npm install -D tailwindcss
-8- Inicializar Tailwind CSS con: npx tailwindcss init
+8- Inicializar Tailwind CSS con: npx tailwindcss init ó npx tailwindcss-cli@latest init para V4
 9- Crear el archivo .claspignore y colocar los archivos que no queramos subir.
 	tailwind.config.js
 	node_modules/**
