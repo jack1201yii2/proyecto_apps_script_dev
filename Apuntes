@@ -84,7 +84,11 @@ Cap 5. Iniciar nuevo proyecto
 
 Subir a github
 1- crear el repositorio en gihub
-2- inicializar el proyecto local con: git init
+2- inicializar el proyecto local con: git init y crear el archivo .gitignore y pegar lo siguiente
+	node_modules/
+	.clasp.json
+	appsscript.json
+	env.js
 3- Añadir todos los archivos con: git add .
 4- Hacer el primer commit: git commit -m "Primer commit"
 5- Cambiar el nombre de la rama: git branch -M main
