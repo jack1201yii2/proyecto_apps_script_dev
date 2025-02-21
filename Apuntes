@@ -105,7 +105,7 @@ Cap 6. Configuraciones previas
 6- Colocamos el codigo para poder renderisar el componente
 7- Importamos el componente frontend/App.html con la funcion include
  en el archivo frontend/index.html despues del body <?!= include('frontend/App') ?>
-8- Creamos el archivo frontend/config/cdn.htlmx y pegamos todos los cdn's que utilizaremos
+8- Creamos el archivo frontend/config/cdn.html y pegamos todos los cdn's que utilizaremos
 9- incluimos el cdn al archivo index con include en la etiqueta <head>
 10- Creamos el archivo frontend/config/constantesCdn.html y pegamos todas las cosntantes que usaremos
 11- Incluimos las constantesCdn al archivo index con include despues de <body>
